@@ -10,6 +10,7 @@ public class Main {
         hotel.agregarHabitacion(new Habitacion(103, "suite"));
 
         System.out.println("");
+        System.out.println("");
         System.out.println("Reto: 1");
 
         // Mostrar todas las habitaciones
