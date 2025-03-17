@@ -9,6 +9,9 @@ public class Main {
         hotel.agregarHabitacion(new Habitacion(102, "doble"));
         hotel.agregarHabitacion(new Habitacion(103, "suite"));
 
+        System.out.println("");
+        System.out.println("Reto: 1");
+
         // Mostrar todas las habitaciones
         hotel.mostrarHabitaciones();
 
@@ -24,6 +27,32 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
+        System.out.println("");
+        System.out.println("Reto: 2");
+        // Crear un gestor de tareas
+        GestorTareas gestor = new GestorTareas();
+
+        // Agregar tareas
+        gestor.agregarTarea("Hacer la compra", "alta");
+        gestor.agregarTarea("Estudiar para el examen", "media");
+        gestor.agregarTarea("Pasear al perro", "baja");
+
+        // Mostrar tareas ordenadas por prioridad
+        gestor.mostrarTareasOrdenadas();
+
+        // Marcar una tarea como completada
+        gestor.marcarCompletada("Hacer la compra");
+
+        // Mostrar tareas después de completar una
+        gestor.mostrarTareasOrdenadas();
+
+        // Eliminar tareas completadas
+        gestor.eliminarCompletadas();
+
+        // Mostrar tareas después de eliminar las completadas
+        gestor.mostrarTareasOrdenadas();
+
 
 
 
